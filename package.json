@@ -1,6 +1,6 @@
 {
   "name": "grunt-cssstats",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A grunt plugin to get CSS statistics for your project.",
   "homepage": "https://github.com/johnotander/grunt-cssstats",
   "repository": "https://github.com/johnotander/grunt-cssstats.git",

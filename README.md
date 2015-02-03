@@ -36,6 +36,25 @@ grunt.initConfig({
 });
 ```
 
+You can analyze the CSS stats for particular builds:
+
+```js
+cssstats: {
+  dev: {
+    options: { safe: true },
+    files: {
+      'output/cssstats-dev.json': ['app/styles/main.css']
+    }
+  },
+  prod: {
+    options: { safe: true },
+    files: {
+      'output/cssstats.json': ['dist/styles/c.css']
+    }
+  }
+},
+```
+
 ### Options
 
 #### options.safe
