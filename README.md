@@ -30,7 +30,7 @@ grunt.initConfig({
       // Task-specific options go here.
     },
     your_target: {
-      ['output/css-statistics.json'],
+      // Target-specific file lists and/or options go here.
     },
   },
 });
