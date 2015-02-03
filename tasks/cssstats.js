@@ -19,6 +19,7 @@ module.exports = function (grunt) {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
+      safe: false
     });
 
     // Iterate over all specified file groups.
@@ -39,7 +40,7 @@ module.exports = function (grunt) {
 
       // Write the destination file.
 
-      var results = cssstats(src.toString());
+      var results = cssstats(src.toString(), options);
       var results = JSON.stringify(results, undefined, 2);
       grunt.file.write(file.dest, results);
 

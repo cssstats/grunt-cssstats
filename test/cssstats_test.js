@@ -39,9 +39,9 @@ exports.css_statistics = {
   custom_options: function (test) {
     test.expect(1);
 
-    var actual = grunt.file.read('tmp/simple-custom-options.json');
-    var expected = grunt.file.read('test/expected/simple-custom-options.json');
-    test.equal(actual, expected.trim(), 'should output a json blob full of stats');
+    var actual = grunt.file.read('tmp/unsafe.json');
+    var expected = grunt.file.read('test/expected/unsafe.json');
+    test.equal(actual, expected.trim(), 'should turn on safe mode and create stats');
 
     test.done();
   }

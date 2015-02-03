@@ -1,8 +1,9 @@
 # grunt-cssstats [![Build Status](https://travis-ci.org/johnotander/grunt-cssstats.svg?branch=master)](https://travis-ci.org/johnotander/grunt-cssstats)
 
-> A grunt plugin to get CSS statistics for your project.
+> A grunt plugin to get [CSS statistics](https://github.com/jxnblk/css-statistics) for your project.
 
 ## Getting Started
+
 This plugin requires Grunt.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
@@ -29,7 +30,7 @@ grunt.initConfig({
       // Task-specific options go here.
     },
     your_target: {
-      // Target-specific file lists and/or options go here.
+      ['output/css-statistics.json']
     },
   },
 })
@@ -37,17 +38,11 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
+#### options.safe
 
-A string value that is used to do something with whatever.
+Type: `Boolean`, Default value: `false`
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
+Turns on [PostCSS' safe mode](https://github.com/postcss/postcss#safe-mode).
 
 ### Usage Examples
 
@@ -66,6 +61,7 @@ grunt.initConfig({
 ```
 
 #### Custom Options
+
 In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
 
 ```js
@@ -82,11 +78,20 @@ grunt.initConfig({
 })
 ```
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
-_(Nothing yet)_
-
 ## License
-Copyright (c) 2015 John Otander. Licensed under the MIT license.
+
+MIT
+
+## Thanks to the following
+
+* <https://github.com/jxnblk/css-statistics>
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+Crafted with <3 by [John Otander](http://johnotander.com) ([@4lpine](https://twitter.com/4lpine)).

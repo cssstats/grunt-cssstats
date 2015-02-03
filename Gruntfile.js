@@ -42,11 +42,10 @@ module.exports = function (grunt) {
       },
       custom_options: {
         options: {
-          separator: ': ',
-          punctuation: ' !!!'
+          safe: true
         },
         files: {
-          'tmp/simple-custom-options.json': ['test/fixtures/simple.css']
+          'tmp/unsafe.json': ['test/fixtures/unsafe.css']
         }
       }
     },

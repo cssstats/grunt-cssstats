@@ -1,0 +1,90 @@
+{
+  "averages": {
+    "specificity": 1,
+    "ruleSize": 1
+  },
+  "size": 16,
+  "gzipSize": 36,
+  "selectors": [
+    {
+      "selector": "a",
+      "specificity": "0,0,0,1",
+      "parts": [
+        {
+          "selector": "a",
+          "type": "c",
+          "index": 0,
+          "length": 1
+        }
+      ],
+      "specificity_10": 1
+    }
+  ],
+  "rules": [
+    {
+      "type": "rule",
+      "childs": [
+        {
+          "type": "decl",
+          "prop": "color",
+          "value": "blue",
+          "index": 0
+        }
+      ],
+      "declarations": [
+        {
+          "type": "decl",
+          "prop": "color",
+          "value": "blue",
+          "index": 0
+        }
+      ],
+      "selector": "a"
+    }
+  ],
+  "declarations": {
+    "all": [
+      {
+        "type": "decl",
+        "prop": "color",
+        "value": "blue",
+        "index": 0
+      }
+    ],
+    "byProperty": {
+      "color": [
+        {
+          "type": "decl",
+          "prop": "color",
+          "value": "blue",
+          "index": 0
+        }
+      ]
+    },
+    "unique": {
+      "color": [
+        {
+          "type": "decl",
+          "prop": "color",
+          "value": "blue",
+          "index": 0
+        }
+      ]
+    },
+    "byMedia": {},
+    "importantCount": 0,
+    "vendorPrefixCount": 0
+  },
+  "aggregates": {
+    "selectors": 1,
+    "declarations": 1,
+    "properties": [
+      "color"
+    ],
+    "mediaQueries": [],
+    "color": {
+      "total": 1,
+      "unique": 1
+    }
+  }
+}
