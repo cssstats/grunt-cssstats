@@ -1,6 +1,6 @@
 # grunt-cssstats
 
-> Get CSS statistics for your project.
+> A grunt plugin to get CSS statistics for your project.
 
 ## Getting Started
 This plugin requires Grunt.
