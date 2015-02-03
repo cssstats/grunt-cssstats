@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-This plugin requires Grunt.
+This plugin requires Grunt and is a wrapper for <https://github.com/jxnblk/css-statistics>.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -30,10 +30,10 @@ grunt.initConfig({
       // Task-specific options go here.
     },
     your_target: {
-      ['output/css-statistics.json']
+      ['output/css-statistics.json'],
     },
   },
-})
+});
 ```
 
 ### Options
@@ -47,35 +47,37 @@ Turns on [PostCSS' safe mode](https://github.com/postcss/postcss#safe-mode).
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+
+In this example, the default options won't be able to handle invalid CSS. So, if a source file
+contains invalid CSS, an error will be raised.
 
 ```js
 grunt.initConfig({
   cssstats: {
     options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      'output/css-stats.json': ['path/to/your.css'],
     },
   },
-})
+});
 ```
 
 #### Custom Options
 
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In order to handle invalid CSS, you can set `options.safe` to `true`. This will turn on
+[PostCSS' safe mode](https://github.com/postcss/postcss#safe-mode).
 
 ```js
 grunt.initConfig({
   cssstats: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+      safe: true
     },
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      'output/css-stats.json': ['path/to/your.css'],
     },
   },
-})
+});
 ```
 
 ## License
