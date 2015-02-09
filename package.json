@@ -1,6 +1,6 @@
 {
   "name": "grunt-cssstats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A grunt plugin to get CSS statistics for your project.",
   "homepage": "https://github.com/johnotander/grunt-cssstats",
   "repository": "https://github.com/johnotander/grunt-cssstats.git",
@@ -33,6 +33,6 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "cssstats": "^1.1.1"
+    "cssstats": "^1.2.1"
   }
 }
