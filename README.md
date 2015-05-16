@@ -1,4 +1,4 @@
-# grunt-cssstats [![Build Status](https://travis-ci.org/johnotander/grunt-cssstats.svg?branch=master)](https://travis-ci.org/johnotander/grunt-cssstats)
+# grunt-cssstats [![Build Status](https://travis-ci.org/cssstats/grunt-cssstats.svg?branch=master)](https://travis-ci.org/cssstats/grunt-cssstats)
 
 > A grunt plugin to get [CSS statistics](https://github.com/jxnblk/css-statistics) for your project.
 
